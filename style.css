@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: myFont;
+}
+@font-face {
+  font-family: "myFont";
+  src: url(./fonts/myFont.otf);
+  font-style: normal;
+  font-weight: normal;
+}
+body{
+  background-color: #dbdbdb;
+}
+.bg {
+  margin-top: -20px;
+  background: url("images/фон2.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+/* body:nth-child(1):hover ~ .bg {
+  background-size: 100%;
+} */
+
+.h1 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: myFont;
+  margin-top: 20px;
+  color: #ff7f50;
+}
+
+/* .rectangle{
+    border: 2px solid linear-gradient(90deg, #aea4e3, #d3ffe8);
+    width: 800px;
+    margin: 0 auto;
+    height: 90px;
+    margin-top: 15px;
+    background:linear-gradient(90deg, #aea4e3, #d3ffe8);
+} */
+
+.h3 {
+  text-align: center;
+  font-family: Arial;
+  font-size: 20px;
+  margin-top: -17px;
+  font-family: myFont;
+  padding-top: 10px;
+  color: #ffc0cb;
+}
+
+.books {
+  position: relative;
+  right: -12%;
+  margin: 4%;
+  font-family: myFont;
+  font-size: 33px;
+}
+.divbooks div {
+  transition: all 0.3s ease 0s;
+}
+.divbooks div:hover {
+  transform: scale(1.3);
+}
+.divbooks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  font-size: 50px;
+  color: #0000cd;
+  transition: all 0.3s ease 0s;
+}
+a{
+  transition: .8s ease;
+}
+.last{
+  color: black;
+}
+.divbooks a:hover {
+  transform: scale(1.3);
+}
+.divbooks a{
+  transition: all 0.3s ease 0s;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+.divbooks a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #00bfff;
+}
+
+.redcolor {
+  color: #0000cd;
+  font-style: italic;
+}
+.growup {
+  margin-top: 35px;
+}
+.book-item {
+  font-family:'Roboto', sans-serif;
+  padding: 30px;
+  box-shadow: 5px 15px 20px rgba(0,0,0,0.5);
+  background-color: #e6eced;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  Max-width: 960px;
+  max-height: 260; 
+  margin: 0 auto;
+  margin-top: 3rem;
+  transition: .8s ease;
+  margin-bottom: 70px;
+}
+.book-item:hover{
+  transform: scale(1.2);
+  box-shadow: 20px 30px 10px rgba(0,0,0,0.5);
+
+}
+.book-img {
+  border-radius: 10px;
+  max-width: 137px;
+  max-height: 218px;
+  margin-right: 30px;
+}
+.name{
+  line-height: 40px;
+  font-size: 30px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.namebook{
+  font-family:'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 40px;
+  padding-bottom: 10px;
+}
+.info{
+  font-family:'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+/* .lock{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+} */
