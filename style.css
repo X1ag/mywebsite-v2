@@ -170,6 +170,12 @@ a {
     display: block;
   }
 }
+@media (max-width: 751px){
+  .divbooks div{
+    font-size: 22px;
+  }
+  
+}
 @media (max-width: 722px){
   .book-item p{
     font-size: 11px;
