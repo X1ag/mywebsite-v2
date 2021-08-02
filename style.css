@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,19 +11,29 @@
   font-style: normal;
   font-weight: normal;
 }
-body{
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+}
+body {
   background-color: #dbdbdb;
 }
 .bg {
   margin-top: -20px;
-  background: url("images/фон2.jpg") no-repeat;
+  background: url("https://wallpapercave.com/wp/wp5608288.jpg")
+    no-repeat;
   background-size: cover;
   height: 100vh;
 }
 /* body:nth-child(1):hover ~ .bg {
   background-size: 100%;
 } */
-
+@media (max-width: 333px) {
+  body .h1 {
+    font-size: 19px;
+  }
+}
 .h1 {
   text-align: center;
   font-size: 45px;
@@ -41,7 +51,12 @@ body{
     margin-top: 15px;
     background:linear-gradient(90deg, #aea4e3, #d3ffe8);
 } */
-
+@media (max-width: 333px) {
+  body .h3 {
+    padding-top: 12px;
+    font-size: 12px;
+  }
+}
 .h3 {
   text-align: center;
   font-family: Arial;
@@ -51,40 +66,44 @@ body{
   padding-top: 10px;
   color: #ffc0cb;
 }
-
-.books {
-  position: relative;
-  right: -12%;
-  margin: 4%;
-  font-family: myFont;
-  font-size: 33px;
-}
+ 
 .divbooks div {
   transition: all 0.3s ease 0s;
 }
 .divbooks div:hover {
   transform: scale(1.3);
 }
+@media (max-width: 333px) {
+  .divbooks div{
+    font-size: 20px;
+  }
+}
+@media (max-width: 722px){
+  .divbooks div{
+    font-size: 25px;
+  }
+}
 .divbooks {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px;
-  font-size: 50px;
+  flex-wrap: nowrap;
+  padding: 30px;
+  font-size: 34px;
   color: #0000cd;
   transition: all 0.3s ease 0s;
 }
-a{
-  transition: .8s ease;
+a {
+  transition: 0.8s ease;
 }
-.last{
+.last {
   color: black;
 }
 .divbooks a:hover {
-  transform: scale(1.3);
+  transform: scale(2);
 }
-.divbooks a{
+.divbooks a {
   transition: all 0.3s ease 0s;
   color: white;
   text-decoration: none;
@@ -101,12 +120,60 @@ a{
   font-style: italic;
 }
 .growup {
-  margin-top: 35px;
+  margin-top: 15px;
+}
+@media (max-width: 333px) {
+  .book-item {
+    font-size: 9px;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (max-width: 333px) {
+  .book-item .book-img{
+    display: none;
+  }
+}
+@media (max-width: 333px) {
+  .book-item .name{
+    font-size: 12px;
+  }
+}
+@media (max-width: 333px) {
+  .book-item .info{
+    font-size: 13px;
+  }
+}
+@media (max-width: 333px) {
+  .book-item .namebook{
+    padding-top: 23px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .book-item .info{
+    margin-top: -18px
+  }
+  .book-item .name{
+    padding-top: 0px;
+    margin-top: -10px;
+  }
+  .divbooks:nth-child(3){
+    display: block;
+  }
+}
+@media (max-width: 722px){
+  .book-item p{
+    font-size: 11px;
+  }
+  .book-item .name{
+    font-size: 13px;
+  }
 }
 .book-item {
-  font-family:'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 30px;
-  box-shadow: 5px 15px 20px rgba(0,0,0,0.5);
+  box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.5);
   background-color: #e6eced;
   border-radius: 20px;
   display: flex;
@@ -114,17 +181,16 @@ a{
   justify-content: center;
   align-items: center;
   border: 1px solid #e0e0e0;
-  Max-width: 960px;
-  max-height: 260; 
+  max-width: 900px;
+  max-height: 300px;
   margin: 0 auto;
   margin-top: 3rem;
-  transition: .8s ease;
+  transition: 0.8s ease;
   margin-bottom: 70px;
 }
-.book-item:hover{
+.book-item:hover {
   transform: scale(1.2);
-  box-shadow: 20px 30px 10px rgba(0,0,0,0.5);
-
+  box-shadow: 20px 30px 10px rgba(0, 0, 0, 0.5);
 }
 .book-img {
   border-radius: 10px;
@@ -132,22 +198,24 @@ a{
   max-height: 218px;
   margin-right: 30px;
 }
-.name{
+.name {
   line-height: 40px;
-  font-size: 30px;
-  font-family: 'Roboto';
-  font-weight: 700;
+  font-size: 18px;
+  font-family: "Roboto";
   padding-bottom: 20px;
+  padding-top: 15px;
 }
-.namebook{
-  font-family:'Roboto', sans-serif;
-  font-size: 15px;
+.namebook {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
   line-height: 40px;
   padding-bottom: 10px;
+  font-weight: 700;
+
 }
-.info{
-  font-family:'Roboto', sans-serif;
-  font-size: 18px;
+.info {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
   font-weight: 400;
   padding-bottom: 30px;
 }
@@ -157,3 +225,6 @@ a{
   justify-content: center;
   align-items: center;
 } */
+.freeplace{
+  margin-top: 160px;
+}

@@ -1,8 +1,10 @@
-jQuery(document).ready(function() {
-    jQuery("a.scrollto").click(function () {
-    elementClick = jQuery(this).attr("href")
-    destination = jQuery(elementClick).offset().top;
-    jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1100);
-    return false;
-});
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+            block: 'center'
+        });
+    });
 });
