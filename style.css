@@ -19,6 +19,26 @@
 body {
   background-color: #dbdbdb;
 }
+body::-webkit-scrollbar{
+  width: 12px;
+}
+body::-webkit-scrollbar-track{
+  background-color: #ccd3e3
+}
+
+body::-webkit-scrollbar-thumb{
+  background:
+  linear-gradient(to top, skyblue, transparent),
+  linear-gradient(-90deg, coral, transparent);;
+  border-radius: 16px;
+  /* border: 1px solid #ffffff; */
+  transition: .2s ease;
+}
+body::-webkit-scrollbar-thumb:hover{
+  background:
+  linear-gradient(to bottom, skyblue, transparent),
+  linear-gradient(-90deg, coral, transparent);;
+}
 .bg {
   margin-top: -20px;
   background: url("https://wallpapercave.com/wp/wp5608288.jpg")
@@ -102,8 +122,12 @@ body {
   color: #0000cd;
   transition: all 0.3s ease 0s;
 }
-a {
+span {
   transition: 0.8s ease;
+}
+.divbooks a{
+  text-decoration: none;
+  color: #0000cd;
 }
 .last {
   color: black;
@@ -111,13 +135,13 @@ a {
 .divbooks a:hover {
   transform: scale(2);
 }
-.divbooks a {
+.divbooks span{
   transition: all 0.3s ease 0s;
+  list-style-type: none;
   color: white;
-  text-decoration: none;
   padding: 5px;
 }
-.divbooks a:hover {
+.divbooks span:hover {
   text-decoration: none;
   cursor: pointer;
   color: #00bfff;
@@ -207,7 +231,7 @@ a {
   max-width: 900px;
   max-height: 300px;
   margin: 0 auto;
-  margin-top: 3rem;
+  margin-top: 7rem;
   transition: 0.8s ease;
   margin-bottom: 70px;
 }
@@ -248,6 +272,43 @@ a {
   justify-content: center;
   align-items: center;
 } */
-.freeplace{
-  margin-top: 160px;
+.books-items{
+  background-blend-mode: screen;
+	background:
+		linear-gradient(limegreen, transparent),
+		linear-gradient(90deg, skyblue, transparent),
+		linear-gradient(-90deg, coral, transparent);
+  background-size: 100%;
+  margin-top: 13rem;
+  padding-top: 1rem;
+  padding-bottom: 10rem;
 }
+.books-items:first-child{
+  margin-top: 50px;
+}
+@media (max-width: 480px){
+  .books-items{
+    margin-top: 9rem;
+  };
+}
+@media (max-width:321px) {
+  .books-items{
+    margin-top: 3rem;
+  }
+}
+@media (max-width:751px) {
+  .books-items{
+    margin-top: 3rem;
+  }
+}
+@media (max-width:300px) {
+  .books-items{
+    margin-top: 2rem;
+  }
+}
+@media (max-width:1256px) {
+  .books-items{
+    margin-top: 1.7rem;
+  }
+}
+
