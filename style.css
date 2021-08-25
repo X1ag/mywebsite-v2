@@ -119,7 +119,7 @@ body::-webkit-scrollbar-thumb:hover{
   flex-wrap: nowrap;
   padding: 30px;
   font-size: 34px;
-  color: #0000cd;
+  color: #e0e0e0;
   transition: all 0.3s ease 0s;
 }
 span {
@@ -128,12 +128,14 @@ span {
 .divbooks a{
   text-decoration: none;
   color: #0000cd;
+  transition: .0s ease ;
 }
 .last {
   color: black;
 }
 .divbooks a:hover {
   transform: scale(2);
+  text-decoration: underline #e0e0e0;
 }
 .divbooks span{
   transition: all 0.3s ease 0s;
